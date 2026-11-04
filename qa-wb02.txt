@@ -1,0 +1,7 @@
+WB-02 Windows auto install QA
+source_sha: ac58c9689d921cc859661e4cb7eb37a5b67c5abe
+mode: auto
+plan: wb02-fix-simple-auto-plan.json sha256 0522eb1a4826fcb9dd5162a9724f9305e1d367ee8c74168a3721a0689c2ee2dd
+approval: PLAN_READY https://github.com/komleff/overgate-rc4-wb02-auto-20261104/pull/1#issuecomment-6628414360
+project verify.sh: literal cp of evidence/literal-b-simple-auto-project-verify-template.sh (sha256 7d92606526ba81f81aa3acae9bd5a264e7a647084abd161848fb9a232e74b28c), then single source_sha assertion rebound to ac58c9689d921cc859661e4cb7eb37a5b67c5abe (PM-approved, https://github.com/komleff/overgate/pull/12#issuecomment-6628354758)
+apply: PASS; helpers memory/bd/protect: PASS; check-reference: PASS; verify.sh: PASS; installed audit: PASS
